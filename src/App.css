@@ -1,7 +1,11 @@
+html{
+  background-color: #586606;
+}
+
 .flashcard { 
   width: 300px;
   height: 200px;
-  border: 1px solid #ccc;
+  border: 5px solid #e09705;
   border-radius: 10px;
   perspective: 1000px;
   cursor: pointer;
@@ -20,13 +24,13 @@
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  background: #f8f9fa;
+  background: #10ca76;
   border-radius: 10px;
 }
 
 .flashcard .back {
   transform: rotateY(180deg);
-  background: #dee2e6;
+  background: #7296ba;
 }
 
 .flashcard.flipped .front {
@@ -35,4 +39,32 @@
 
 .flashcard.flipped .back {
   transform: rotateY(0deg);
+}
+
+.inputs{
+  border:5px solid #7296ba;
+  border-radius: 10px;
+  border-bottom: 10px;
+  justify-content: center;
+  text-align: center;
+}
+input{
+  padding: 10px;
+  margin: 10px;
+  background-color: #d5e8fb;
+}
+button{
+  padding: 12px;
+  margin: 20px;
+  background-color: #adcd2c;
+}
+.next{
+  margin-left:1400px;
+  margin-bottom: 10px;
+}
+.prev{
+ margin-left:10pxpx;
+}
+.par{
+  color: aliceblue;
 }

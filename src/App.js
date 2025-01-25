@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"; // Import useState and useEf
 import AddFlashcard from "./Component/AddFlashcard";
 import Controls from "./Component/Controls";
 import Flashcard from "./Component/Flashcard";
+import './App.css'
 
 
 const App = () => {
@@ -40,7 +41,7 @@ const App = () => {
       {flashcards.length > 0 ? (
         <Flashcard data={flashcards[currentIndex]} />
       ) : (
-        <p>No flashcards available. Add one below!</p>
+        <p className="par">No flashcards available. Add one below!</p>
       )}
       <Controls next={nextCard} prev={prevCard} />
       <AddFlashcard onAdd={addFlashcard} />

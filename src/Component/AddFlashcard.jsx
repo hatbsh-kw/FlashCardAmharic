@@ -14,6 +14,7 @@ const AddFlashcard = ({ onAdd }) => {
   };
 
   return (
+    <div className='inputs'> 
     <form onSubmit={handleSubmit}>
       <input
         type="text"
@@ -29,6 +30,7 @@ const AddFlashcard = ({ onAdd }) => {
       />
       <button type="submit">Add</button>
     </form>
+    </div>
   );
 };
 
